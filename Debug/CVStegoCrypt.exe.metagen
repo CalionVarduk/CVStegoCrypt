@@ -1,0 +1,425 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CVStegoCrypt, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CVNetExtensions.LabelButtonMouseClickHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MouseEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, MouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class CVNetExtensions.LabelButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Label
+    Void .ctor(System.Windows.Forms.Control, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CVNetExtensions.LabelButtonMouseClickHandler MouseClickExtension : Public
+    System.Drawing.Color normalBackColor : Public
+    System.Drawing.Color normalForeColor : Public
+    System.Drawing.Color mouseOverBackColor : Public
+    System.Drawing.Color mouseOverForeColor : Public
+    System.Drawing.Color activeBackColor : Public
+    System.Drawing.Color activeForeColor : Public
+    System.Drawing.Color activeMouseOverBackColor : Public
+    System.Drawing.Color activeMouseOverForeColor : Public
+    System.Drawing.Color disabledBackColor : Public
+    System.Drawing.Color disabledForeColor : Public
+  Properties:
+    Boolean isOnClickDeactivatable 'get set' : 
+    Boolean runOnMouseClickProcedure 'get set' : 
+    Boolean changeColorsOnActivation 'get set' : 
+    Boolean changeColorsOnMouseOver 'get set' : 
+    Boolean isActivatedOnHold 'get set' : 
+    Boolean isActivatedOnClick 'get set' : 
+    Boolean isActivated 'get set' : 
+    Boolean isMouseHovering 'get set' : 
+    Boolean isMouseWithinBounds 'get set' : 
+    Boolean isMouseMoving 'get set' : 
+    Boolean isMouseDown 'get set' : 
+    Boolean isEnabled 'get set' : 
+  Methods:
+    get_isEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseDown(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseMoving(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseWithinBounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseHovering(): PrivateScope, Public, HideBySig, SpecialName
+    get_isActivated(): PrivateScope, Public, HideBySig, SpecialName
+    get_isActivatedOnClick(): PrivateScope, Public, HideBySig, SpecialName
+    set_isActivatedOnClick(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_isActivatedOnHold(): PrivateScope, Public, HideBySig, SpecialName
+    set_isActivatedOnHold(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_changeColorsOnMouseOver(): PrivateScope, Public, HideBySig, SpecialName
+    set_changeColorsOnMouseOver(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_changeColorsOnActivation(): PrivateScope, Public, HideBySig, SpecialName
+    set_changeColorsOnActivation(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_runOnMouseClickProcedure(): PrivateScope, Public, HideBySig, SpecialName
+    set_runOnMouseClickProcedure(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_isOnClickDeactivatable(): PrivateScope, Public, HideBySig, SpecialName
+    set_isOnClickDeactivatable(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    setFixedSize(Size): PrivateScope, Public, HideBySig
+    resetDisplayedColors(): PrivateScope, Public, HideBySig
+    forceActivate(): PrivateScope, Public, HideBySig
+    forceDeactivate(): PrivateScope, Public, HideBySig
+    enable(): PrivateScope, Public, HideBySig
+    disable(): PrivateScope, Public, HideBySig
+Class CVNetExtensions.ButtonHorizontalMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Panel
+    Void .ctor(System.Windows.Forms.Control, System.String, Int32, System.Drawing.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Control, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+    System.Drawing.Point StartOffset 'get set' : 
+    Int32 Spacing 'get set' : 
+  Methods:
+    get_Spacing(): PrivateScope, Public, HideBySig, SpecialName
+    set_Spacing(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_StartOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartOffset(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    addButton(String, String): PrivateScope, Public, HideBySig
+    removeButton(UInt32): PrivateScope, Public, HideBySig
+    op_Subscript(Int32): PrivateScope, Public, HideBySig, SpecialName
+    getButton(UInt32): PrivateScope, Public, HideBySig
+Class CVNetExtensions.CheckBoxMouseClickHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MouseEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, MouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class CVNetExtensions.AutoValidatedForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CVNetExtensions.SecondaryForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVNetExtensions.AutoValidatedForm
+    Void .ctor(CVNetExtensions.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean isModal 'get set' : 
+    Boolean isShown 'get set' : 
+  Methods:
+    get_isShown(): PrivateScope, Public, HideBySig, SpecialName
+    get_isModal(): PrivateScope, Public, HideBySig, SpecialName
+    set_isModal(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    display(): PrivateScope, Public, HideBySig
+    closeIfShown(): PrivateScope, Public, HideBySig
+Class ColorExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetScaled(Color, Single): PrivateScope, Public, Static, HideBySig
+Class CVNetExtensions.SimpleBox: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Font InfoFont 'get set' : 
+    System.String Title 'get set' : 
+    System.Drawing.Color ButtonMousedOverForeColor 'get set' : 
+    System.Drawing.Color ButtonMousedOverBackColor 'get set' : 
+    System.Drawing.Color ButtonNormalForeColor 'get set' : 
+    System.Drawing.Color ButtonNormalBackColor 'get set' : 
+    System.Drawing.Color ForeColor 'get set' : 
+    System.Drawing.Color BackColor 'get set' : 
+  Methods:
+    get_BackColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_BackColor(Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ForeColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ForeColor(Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonNormalBackColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ButtonNormalBackColor(Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonNormalForeColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ButtonNormalForeColor(Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonMousedOverBackColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ButtonMousedOverBackColor(Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ButtonMousedOverForeColor(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_ButtonMousedOverForeColor(Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Title(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Title(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_InfoFont(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_InfoFont(Font): PrivateScope, Public, Static, HideBySig, SpecialName
+    initialize(): PrivateScope, Public, Static, HideBySig
+    display(String, String): PrivateScope, Public, Static, HideBySig
+    display(String): PrivateScope, Public, Static, HideBySig
+    displayWithResult(String): PrivateScope, Public, Static, HideBySig
+Class CVStegoCrypt.StegoBitsNominator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Control, System.String, System.String, System.Drawing.Color): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Byte SetBitsCount 'get ' : 
+    Int32 Height 'get ' : 
+    Int32 Width 'get ' : 
+    System.Drawing.Size BoxSize 'get ' : 
+    System.Drawing.Size Size 'get ' : 
+    Int32 Bottom 'get ' : 
+    Int32 Top  'get ' : 
+    Int32 Right 'get ' : 
+    Int32 Left 'get ' : 
+    System.Drawing.Point Location 'get set' : 
+    Boolean Enabled 'get set' : 
+  Methods:
+    get_Enabled(): PrivateScope, Public, HideBySig, SpecialName
+    set_Enabled(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_Location(): PrivateScope, Public, HideBySig, SpecialName
+    set_Location(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    get_BoxSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_SetBitsCount(): PrivateScope, Public, HideBySig, SpecialName
+    addMouseClickEvent(CheckBoxMouseClickHandler): PrivateScope, Public, HideBySig
+    set(Byte, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    setLsb(): PrivateScope, Public, HideBySig
+    reset(): PrivateScope, Public, HideBySig
+    op_Subscript(Byte): PrivateScope, Public, HideBySig, SpecialName
+    getCode(): PrivateScope, Public, HideBySig
+    validateAll(): PrivateScope, Public, HideBySig
+Class CVStegoCrypt.BitIterator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Byte[], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Byte[] TrueBitMasks : Public, Static, InitOnly
+    Byte[] FalseBitMasks : Public, Static, InitOnly
+  Properties:
+    Boolean isDone 'get ' : 
+    Boolean isLinked 'get ' : 
+    Byte CurrentBitMask 'get ' : 
+    Boolean CurrentBit 'get set' : 
+    Int32 EndByte 'get set' : 
+    Byte iBit  'get set' : 
+    Int32 iByte 'get set' : 
+    Byte[] LinkedData 'get set' : 
+  Methods:
+    get_LinkedData(): PrivateScope, Public, HideBySig, SpecialName
+    set_LinkedData(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_iByte(): PrivateScope, Public, HideBySig, SpecialName
+    set_iByte(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_iBit(): PrivateScope, Public, HideBySig, SpecialName
+    set_iBit(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_EndByte(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndByte(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentBit(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentBit(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentBitMask(): PrivateScope, Public, HideBySig, SpecialName
+    get_isLinked(): PrivateScope, Public, HideBySig, SpecialName
+    get_isDone(): PrivateScope, Public, HideBySig, SpecialName
+    iterate(): PrivateScope, Public, HideBySig
+Class CVStegoCrypt.BitmapIterator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVStegoCrypt.BitIterator
+    Void .ctor(Byte[], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean isInitialized 'get ' : 
+  Methods:
+    get_isInitialized(): PrivateScope, Public, HideBySig, SpecialName
+    initializeColorBits(StegoBitsNominator, StegoBitsNominator, StegoBitsNominator): PrivateScope, Public, HideBySig
+    iterate(): PrivateScope, Public, HideBySig
+Class CVStegoCrypt.BitmapIO: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    load(String, Bitmap&): PrivateScope, Public, Static, HideBySig
+    save(String, Bitmap): PrivateScope, Public, Static, HideBySig
+Class CVStegoCrypt.BitmapStegoBase: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CVStegoCrypt.StegoBitsNominator, CVStegoCrypt.StegoBitsNominator, CVStegoCrypt.StegoBitsNominator): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Byte BitsPerPixel 'get ' : 
+    Byte BitsPerBlue 'get ' : 
+    Byte BitsPerGreen 'get ' : 
+    Byte BitsPerRed 'get ' : 
+  Methods:
+    get_BitsPerRed(): PrivateScope, Public, HideBySig, SpecialName
+    get_BitsPerGreen(): PrivateScope, Public, HideBySig, SpecialName
+    get_BitsPerBlue(): PrivateScope, Public, HideBySig, SpecialName
+    get_BitsPerPixel(): PrivateScope, Public, HideBySig, SpecialName
+Class CVStegoCrypt.AnalysisOutcome: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IComparable
+  Fields:
+    Int32 potentialSize : Public
+    Int32 potentialPosition : Public
+  Methods:
+    set(Int32, Int32): PrivateScope, Public, HideBySig
+    CompareTo(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class CVStegoCrypt.AnalysisPotentialOutcome: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVStegoCrypt.AnalysisOutcome
+    Void .ctor(Single, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single guessAccuracy : Public
+  Methods:
+    set(Single, Int32, Int32): PrivateScope, Public, HideBySig
+    CompareTo(Object): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class CVStegoCrypt.TwinBitmapIterator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Byte[], Byte[], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], Byte[], Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    CVStegoCrypt.BitmapIterator Iterator 'get ' : 
+    Boolean isInitialized 'get ' : 
+    Boolean isDone 'get ' : 
+    Boolean isCorrectlyLinked 'get ' : 
+    Boolean isLinked 'get ' : 
+    Byte CurrentBitMask 'get ' : 
+    Boolean CurrentBit2 'get set' : 
+    Boolean CurrentBit1 'get set' : 
+    Int32 EndByte 'get set' : 
+    Byte iBit  'get set' : 
+    Int32 iByte 'get set' : 
+    Byte[] BitmapData2 'get set' : 
+    Byte[] BitmapData1 'get set' : 
+  Methods:
+    get_BitmapData1(): PrivateScope, Public, HideBySig, SpecialName
+    set_BitmapData1(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_BitmapData2(): PrivateScope, Public, HideBySig, SpecialName
+    set_BitmapData2(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_iByte(): PrivateScope, Public, HideBySig, SpecialName
+    set_iByte(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_iBit(): PrivateScope, Public, HideBySig, SpecialName
+    set_iBit(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_EndByte(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndByte(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentBit1(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentBit1(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentBit2(): PrivateScope, Public, HideBySig, SpecialName
+    set_CurrentBit2(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentBitMask(): PrivateScope, Public, HideBySig, SpecialName
+    get_isLinked(): PrivateScope, Public, HideBySig, SpecialName
+    get_isCorrectlyLinked(): PrivateScope, Public, HideBySig, SpecialName
+    get_isDone(): PrivateScope, Public, HideBySig, SpecialName
+    get_isInitialized(): PrivateScope, Public, HideBySig, SpecialName
+    get_Iterator(): PrivateScope, Public, HideBySig, SpecialName
+    initializeColorMasks(StegoBitsNominator, StegoBitsNominator, StegoBitsNominator): PrivateScope, Public, HideBySig
+    swapData(): PrivateScope, Public, HideBySig
+    iterate(): PrivateScope, Public, HideBySig
+Class CVStegoCrypt.BitmapSteganalysis: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVStegoCrypt.BitmapStegoBase
+    Void .ctor(CVStegoCrypt.StegoBitsNominator, CVStegoCrypt.StegoBitsNominator, CVStegoCrypt.StegoBitsNominator): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Size CarryBitmapSize 'get ' : 
+    Int32 CarryBitmapLength 'get ' : 
+    Int32 CarryBitmapPixelCount 'get ' : 
+    System.Drawing.Size OriginalBitmapSize 'get ' : 
+    Int32 OriginalBitmapLength 'get ' : 
+    Int32 OriginalBitmapPixelCount 'get ' : 
+    Boolean CarryBitmapLoaded 'get ' : 
+    Boolean OriginalBitmapLoaded 'get ' : 
+    System.String CarryBitmapPath 'get ' : 
+    System.String OriginalBitmapPath 'get ' : 
+  Methods:
+    get_OriginalBitmapPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_CarryBitmapPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalBitmapLoaded(): PrivateScope, Public, HideBySig, SpecialName
+    get_CarryBitmapLoaded(): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalBitmapPixelCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalBitmapLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalBitmapSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_CarryBitmapPixelCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_CarryBitmapLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_CarryBitmapSize(): PrivateScope, Public, HideBySig, SpecialName
+    compareBitmaps(UInt32, UInt32, UInt32, UInt32&, UInt32&): PrivateScope, Public, HideBySig
+    analizeCarry(UInt32, UInt32, UInt32, UInt32): PrivateScope, Public, HideBySig
+    guessNomimatedBits(): PrivateScope, Public, HideBySig
+    loadOriginalBitmap(String): PrivateScope, Public, HideBySig
+    loadCarryBitmap(String): PrivateScope, Public, HideBySig
+    getOriginalBitmap(): PrivateScope, Public, HideBySig
+    getCarryBitmap(): PrivateScope, Public, HideBySig
+    clear(): PrivateScope, Public, HideBySig
+Class CVStegoCrypt.BitmapSteganography: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVStegoCrypt.BitmapStegoBase
+    Void .ctor(CVStegoCrypt.StegoBitsNominator, CVStegoCrypt.StegoBitsNominator, CVStegoCrypt.StegoBitsNominator): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 MaxStartPosition 'get ' : 
+    Int32 MaxInfoLength 'get ' : 
+    System.Drawing.Size CreatedBitmapSize 'get ' : 
+    Int32 CreatedBitmapLength 'get ' : 
+    Int32 CreatedBitmapPixelCount 'get ' : 
+    System.Drawing.Size LoadedBitmapSize 'get ' : 
+    Int32 LoadedBitmapLength 'get ' : 
+    Int32 LoadedBitmapPixelCount 'get ' : 
+    Int32 InfoLength 'get ' : 
+    Boolean InfoLoaded 'get ' : 
+    Boolean BitmapCreated 'get ' : 
+    Boolean BitmapLoaded 'get ' : 
+    System.String InfoPath 'get ' : 
+    System.String BitmapPath 'get ' : 
+  Methods:
+    get_BitmapPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_InfoPath(): PrivateScope, Public, HideBySig, SpecialName
+    get_BitmapLoaded(): PrivateScope, Public, HideBySig, SpecialName
+    get_BitmapCreated(): PrivateScope, Public, HideBySig, SpecialName
+    get_InfoLoaded(): PrivateScope, Public, HideBySig, SpecialName
+    get_InfoLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedBitmapPixelCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedBitmapLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedBitmapSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_CreatedBitmapPixelCount(): PrivateScope, Public, HideBySig, SpecialName
+    get_CreatedBitmapLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_CreatedBitmapSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxInfoLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxStartPosition(): PrivateScope, Public, HideBySig, SpecialName
+    conceal(Int32): PrivateScope, Public, HideBySig
+    extract(Int32): PrivateScope, Public, HideBySig
+    erase(EraseMode): PrivateScope, Public, HideBySig
+    loadInformation(String): PrivateScope, Public, HideBySig
+    saveInformation(String): PrivateScope, Public, HideBySig
+    loadBitmap(String): PrivateScope, Public, HideBySig
+    saveBitmap(String): PrivateScope, Public, HideBySig
+    getLoadedBitmap(): PrivateScope, Public, HideBySig
+    getCreatedBitmap(): PrivateScope, Public, HideBySig
+    clear(): PrivateScope, Public, HideBySig
+Struct CVStegoCrypt.BitmapSteganography+EraseMode: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    EraseMode Zeros = 0 : Public, Static, Literal, HasDefault
+    EraseMode Ones = 1 : Public, Static, Literal, HasDefault
+    EraseMode Random = 2 : Public, Static, Literal, HasDefault
+Class CVStegoCrypt.ButtonExtensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    setColorScheme(LabelButton, Color): PrivateScope, Public, Static, HideBySig
+    setProperties(LabelButton, Boolean(HasFieldMarshal), Size, Color): PrivateScope, Public, Static, HideBySig
+Class CVStegoCrypt.DisplayInfoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVNetExtensions.SecondaryForm
+    Void .ctor(CVNetExtensions.LabelButton, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean LoadedInfoMode 'get ' : 
+    Boolean CreatedBitmapMode 'get ' : 
+    Boolean LoadedBitmapMode 'get ' : 
+    Boolean DisplayFilePath 'get set' : 
+  Methods:
+    get_DisplayFilePath(): PrivateScope, Public, HideBySig, SpecialName
+    set_DisplayFilePath(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedBitmapMode(): PrivateScope, Public, HideBySig, SpecialName
+    get_CreatedBitmapMode(): PrivateScope, Public, HideBySig, SpecialName
+    get_LoadedInfoMode(): PrivateScope, Public, HideBySig, SpecialName
+    setup(BitmapSteganography): PrivateScope, Public, HideBySig
+Class CVStegoCrypt.SteganographyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVNetExtensions.SecondaryForm
+    Void .ctor(CVNetExtensions.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CVStegoCrypt.SteganalysisForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVNetExtensions.SecondaryForm
+    Void .ctor(CVNetExtensions.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CVStegoCrypt.AboutForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVNetExtensions.SecondaryForm
+    Void .ctor(CVNetExtensions.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CVStegoCrypt.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CVNetExtensions.AutoValidatedForm
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

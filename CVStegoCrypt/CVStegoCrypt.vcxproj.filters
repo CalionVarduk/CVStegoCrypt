@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CV .NET Extensions">
+      <UniqueIdentifier>{9d7e0cfa-c15c-47c1-90f3-af443f63d46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV .NET Extensions\Header Files">
+      <UniqueIdentifier>{105803b8-e1bd-44fc-af9e-beb31582207e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV .NET Extensions\Source Files">
+      <UniqueIdentifier>{e4e39928-62ea-4411-b246-531f05d3d9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{197ac236-7a99-4ee0-a6ea-70704daaf875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{f8d0e8f9-8ba3-48dc-8f4a-df8356b4ee45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\ButtonHorizontalMenu.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\LabelButton.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\SecondaryForm.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TextBoxParser.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledCheckBox.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledCheckBoxList.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledControl.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledLabel.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledLabelList.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledTextBox.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledTextBoxList.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\TitledVerticalList.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CVNetExtensions.h">
+      <Filter>CV .NET Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\Limiter.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\AutoValidatedForm.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteganographyForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV .NET Extensions\ColorExtensions.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteganalysisForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonExtensions.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="StegoBitsNominator.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapSteganography.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayInfoForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleBox.h">
+      <Filter>CV .NET Extensions\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapSteganalysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapIO.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapStegoBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapIterator.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitIterator.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="TwinBitmapIterator.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisPotentialOutcome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisOutcome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\ButtonHorizontalMenu.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\LabelButton.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TextBoxParser.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TitledCheckBox.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TitledCheckBoxList.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TitledLabel.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TitledLabelList.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TitledTextBox.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CV .NET Extensions\TitledTextBoxList.cpp">
+      <Filter>CV .NET Extensions\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StegoBitsNominator.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapSteganography.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapSteganalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapStegoBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapIterator.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BitIterator.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="TwinBitmapIterator.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
